@@ -1,0 +1,87 @@
+/* Reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  border: 10px solid red;
+  padding: 10px;
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Main Area */
+.main-area {
+  display: flex;
+  margin: 10px 0;
+  justify-content: flex-start; /* Ensures the content is aligned */
+  width: 100%;
+}
+
+/* Navigation */
+.nav {
+  padding: 10px;
+  min-width: 120px;
+  border-right: 10px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures items are aligned at the top */
+  margin-right: 20px; /* Adjust spacing between nav and content */
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  margin-bottom: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Content Section */
+.content {
+  border: 10px solid red;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+}
+
+/* Footer */
+.footer {
+  border: 10px solid red;
+  text-align: left;
+  padding: 10px;
+  margin-top: 20px; /* Added margin for better spacing */
+}
