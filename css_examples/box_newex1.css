@@ -1,43 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box and Button Hover Example</title>
-    <style>
-        /* Styling for .box1 */
-        .box1 {
-            background-color: red;
-            border: 0px solid purple;
-            padding: 10px;
-            height: 100px;
-            width: 100px;
-            margin: 100px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Styling for .box2 */
-        .box2 {
-            background-color: blue;
-            border: 0px solid green;
-            padding: 10px;
-            height: 100px;
-            width: 100px;
-            margin: 70px;
-        }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
 
-        /* Hover effect for button */
-        button:hover {
-            background-color: lightblue;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-    <!-- Boxes with styles applied -->
-    <div class="box1"></div>
-    <div class="box2"></div>
+.container {
+    display: flex;
+    gap: 20px;
+}
 
-    <!-- Button with hover effect -->
-    <button>Hover over me!</button>
-</body>
-</html>
+.box {
+    width: 150px;
+    height: 150px;
+    transition: background-color 0.5s ease;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: blue;
+}
+
+/* Change colors simultaneously when hovering over any box */
+.container:hover .box1 {
+    background-color: blue;
+}
+
+.container:hover .box2 {
+    background-color: red;
+}
+
+.box1:hover {
+    background-color: blue;
+}
+
+.box2:hover {
+    background-color: red;
+}
